@@ -30,14 +30,10 @@ return {
             lsp.config["bashls"] = {
                 cmd = { "bash-language-server", "start" },
             }
-            lsp.config["taplo"] = {
-                cmd = { "taplo", "lsp", "stdio" },
-            }
 
             lsp.start(lsp.config["lua_ls"])
             lsp.start(lsp.config["pyright"])
             lsp.start(lsp.config["bashls"])
-            lsp.start(lsp.config["taplo"])
         end,
     },
 }

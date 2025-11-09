@@ -16,9 +16,10 @@ vim.opt.rtp:prepend(lazypath)
 -- Plugins via lazy.nvim
 -- ========================
 require("lazy").setup({
-    { import = "config.mini"},
-    { import = "config.lsp" },
-    { import = "config.completion" },
-    { import = "config.telescope"},
-    { import = "config.nvim-tree"}
+    { import = "lazy.lsp" },
+    { import = "lazy.completion" },
+    { import = "lazy.telescope"},
+    { import = "lazy.nvim-tree"},
+     { import = "lazy.lua-line"},
+     { import = "lazy.barbar"},
 })
