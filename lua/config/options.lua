@@ -1,17 +1,16 @@
--- ============================================
--- Options
--- ============================================
 
-local opt = vim.opt
+-- ========================
+-- Basic settings
+-- ========================
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+vim.o.clipboard = "unnamedplus"
 
-opt.number = true
-opt.relativenumber = true
-opt.tabstop = 4
-opt.shiftwidth = 4
-opt.expandtab = true
-opt.smartindent = true
-opt.wrap = false
-opt.mouse = "a"
-opt.clipboard = "unnamedplus"
-opt.termguicolors = true
-opt.cursorline = true
+-- Tab / Indent
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
+
+-- Line numbers
+vim.o.number = true
+vim.o.relativenumber = true
